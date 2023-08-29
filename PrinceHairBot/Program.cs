@@ -29,12 +29,12 @@ namespace PrinceHairBot
             IWebElement barberDropdown = driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/p[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/div[1]/div[4]/select[1]"));
 
             //fill textboxes
-            nameBox.SendKeys("Sabri Khaled");
-            phoneBox.SendKeys("6787358424");
+            nameBox.SendKeys("Name Here");
+            phoneBox.SendKeys("4044044040");
 
             //simulate clicking into dropdown and selecting barber
             SelectElement select = new SelectElement(barberDropdown);
-            select.SelectByValue("4  - PJ / Bajat (New location: 1905 Beaver Ruin Rd, Norcross, GA 30071)");
+            select.SelectByValue("Barber Name Here)");
             barberDropdown.Click();
 
         }
